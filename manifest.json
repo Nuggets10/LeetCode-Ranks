@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "LeetCode Ranks",
+    "version": "1.0.0",
+    "content_scripts": [
+      {
+        "matches": ["https://leetcode.com/u/*"],
+        "js": ["Content.js"]
+      }
+    ],
+    "icons": 
+    {
+      "16": "ExtensionIcon.png",
+      "32": "ExtensionIcon.png",
+      "48": "ExtensionIcon.png",
+      "128": "ExtensionIcon.png"
+    }
+  }
