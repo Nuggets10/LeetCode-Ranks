@@ -1,17 +1,17 @@
 # 📦 | LeetCode Ranks
-LeetCode Ranks is a browser extension that adds a ranking system to user's profiles on LeetCode based on the number of solved problems.
+LeetCode Ranks is a browser extension that adds a ranking system to LeetCode user profiles, based on the number of solved problems.
 
 # 🚀 | Installation
-The extension can be found on the Chrome Extension Store [here] or you can download the files locally and upload them to your browser by following these steps:
+You can find the extension on the Chrome Web Store [here], or alternatively, you can download the files locally and upload them to your browser by following these steps:
 - Download the latest release
 - Unzip the downloaded folder
 - Open your browser and navigate to the "Extensions" tab
-- Activate developer mode
-- Click on the "Upload decompressed" button that just appeared
+- Enable developer mode
+- Click the "Load unpacked" button that appears
 
 # ❓ | Rankings
-Ranks are given to the users based on the number of solved problems.
-Each rank comes with its name and color.
+Users receive ranks based on the number of problems they’ve solved.
+Each rank has a specific name and color associated with it.
 
 | Solved Problems    | Name                     | Color      | Color Preview        |
 | ------------------- | ------------------------- | ---------- | -------------- |
