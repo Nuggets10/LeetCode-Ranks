@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeetCode Badge</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Badge</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="badge" id="badge">
-        <span id="rank-name">Gold IV</span>
-    </div>
 
-    <script src="Content.js"></script>
+  <script>
+    const message = "placeholder";
+    const color = "#FFFFFF";
+
+    const badge = document.createElement("div");
+    badge.classList.add("badge");
+    badge.style.backgroundColor = color;
+
+    const rankName = document.createElement("span");
+    rankName.id = "rank-name";
+    rankName.textContent = message;
+
+    badge.appendChild(rankName);
+    document.body.appendChild(badge);
+  </script>
 </body>
 </html>
