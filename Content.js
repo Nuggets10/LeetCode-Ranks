@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 (async () => {
-    await sleep(2000);
+    await sleep(1000);
 
     function getElementTextByXPath(xpath) {
         const result = document.evaluate(
@@ -43,9 +43,6 @@ function sleep(ms) {
     console.log("Easy:", solvedEasy);
     console.log("Medium:", solvedMedium);
     console.log("Hard:", solvedHard);
-
-
-    console.log(solvedEasy);
     const totalSolved = solvedEasy + solvedMedium + solvedHard;
 
     const levels = [
@@ -80,8 +77,7 @@ function sleep(ms) {
         { range: [2250, 2499], message: "Grandmaster of Logic", color: "#FFD600" },
         { range: [2500, Infinity], message: "The Coding Myth", color: "#FF4081" }
     ];
-    
-    // Calcolare il livello in base a totalSolved
+
     let message = "";
     let color = "";
     
@@ -98,19 +94,39 @@ function sleep(ms) {
     
 
     console.log(totalSolved);
-    console.log("valori");
-    console.log(message);
-    console.log(color);
 
-    const badge = document.createElement("div");
-    badge.classList.add("badge");
+    const targetElement = document.querySelector("#__next > div.flex.min-h-screen.min-w-\\[360px\\].flex-col.text-label-1.dark\\:text-dark-label-1.bg-layer-bg.dark\\:bg-dark-layer-bg > div.mx-auto.w-full.grow.p-4.md\\:max-w-\\[888px\\].md\\:p-6.lg\\:max-w-screen-xl > div > div:nth-child(1) > div > div.text-label-2.dark\\:text-dark-label-2.flex.flex-col.space-y-4 > div.flex.space-x-4 > div.relative.flex.h-20.w-20.shrink-0 > img")
 
-    badge.style.backgroundColor = color;
+    if (targetElement) {
+        const rect = targetElement.getBoundingClientRect();
+      
+        const host = document.createElement("div");
+        host.style.position = "fixed";
+        host.style.top = `${rect.top + window.scrollY}px`;
+        host.style.left = `${rect.left + window.scrollX - 185}px`;
+        host.style.zIndex = "9999";
+        document.body.appendChild(host);
+      
+        const shadow = host.attachShadow({ mode: "open" });
+      
+        const style = document.createElement("style");
+        style.textContent = `
+          .badge {
+            padding: 10px 20px;
+            border-radius: 12px;
+            background-color: ${color};
+            color: black;
+            font-weight: bold;
+            font-family: sans-serif;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+          }
+        `;
 
-    const rankName = document.createElement("span");
-    rankName.id = "rank-name";
-    rankName.textContent = message;
-
-    badge.appendChild(rankName);
-    document.body.appendChild(badge);
+        const badge = document.createElement("div");
+        badge.classList.add("badge");
+        badge.textContent = message;
+      
+        shadow.appendChild(style);
+        shadow.appendChild(badge);
+      }
 })();
