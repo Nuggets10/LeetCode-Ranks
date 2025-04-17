@@ -98,17 +98,12 @@ function sleep(ms) {
     const targetElement = document.querySelector("#__next > div.flex.min-h-screen.min-w-\\[360px\\].flex-col.text-label-1.dark\\:text-dark-label-1.bg-layer-bg.dark\\:bg-dark-layer-bg > div.mx-auto.w-full.grow.p-4.md\\:max-w-\\[888px\\].md\\:p-6.lg\\:max-w-screen-xl > div > div:nth-child(1) > div > div.text-label-2.dark\\:text-dark-label-2.flex.flex-col.space-y-4 > div.flex.space-x-4 > div.relative.flex.h-20.w-20.shrink-0 > img")
 
     if (targetElement) {
-        const rect = targetElement.getBoundingClientRect();
-      
         const host = document.createElement("div");
-        host.style.position = "fixed";
-        host.style.top = `${rect.top + window.scrollY}px`;
-        host.style.left = `${rect.left + window.scrollX - 185}px`;
-        host.style.zIndex = "9999";
+        host.style.position = "absolute";
         document.body.appendChild(host);
-      
+    
         const shadow = host.attachShadow({ mode: "open" });
-      
+    
         const style = document.createElement("style");
         style.textContent = `
           .badge {
@@ -121,12 +116,22 @@ function sleep(ms) {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
           }
         `;
-
+    
         const badge = document.createElement("div");
         badge.classList.add("badge");
         badge.textContent = message;
-      
+    
         shadow.appendChild(style);
         shadow.appendChild(badge);
-      }
+    
+        function updatePosition() {
+            const rect = targetElement.getBoundingClientRect();
+            host.style.top = `${rect.top + window.scrollY}px`;
+            host.style.left = `${rect.left + window.scrollX - 185}px`;
+        }
+    
+        updatePosition();
+        window.addEventListener("scroll", updatePosition);
+        window.addEventListener("resize", updatePosition);
+    }    
 })();
