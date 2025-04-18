@@ -1,13 +1,28 @@
 <p align="center">
   <img height="300" src="https://github.com/user-attachments/assets/f2a5c966-0eef-463e-8b5c-32335320d6b0" />
 </p>
+
 # 📦 | LeetCode Ranks
 LeetCode Ranks is a browser extension that adds a badge ranking system to LeetCode user profiles, based on the number of solved problems.
 
 ![Image](https://github.com/user-attachments/assets/583f4f59-b9f7-456e-8483-b42076a70902)
 
-# 🚀 | Installation
-You can find the extension on the Firefox Extension Store [here], or alternatively, you can download the files locally and upload them to your browser by following these steps:
+# 🚀 | Automatic Installation
+You can check the extension availability on different stores in the following table, or alternatively, you can download the files locally and upload them to your browser by following the steps listed in the manual installation section.
+<div align="center">
+
+|   Browser   |   Automatic Installation   |     Link     |   Manual Installation   |
+|:-----------:|:--------------------------:|:------------:|:------------------------:|
+|   FireFox   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |  [soon]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+|   Chrome    | ![color](https://placehold.co/100x20/ff0000/ff0000.png) |    X      | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+|    Edge     | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |  [soon]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+|   Others    | ![color](https://placehold.co/100x20/ff0000/ff0000.png) |    X      | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+
+</div>
+
+
+
+# 🔧 | Manual Installation
 - Download the latest release
 - Unzip the downloaded folder. The folder structure will look something like this: LeetCodeRanks_vx.x.x > LeetCode Ranks > Various Scripts 
 - Open your browser and navigate to the "Extensions" tab
@@ -18,9 +33,10 @@ You can find the extension on the Firefox Extension Store [here], or alternative
 # ❓ | Rankings
 Users receive ranks based on the number of problems they’ve solved.
 Each rank has a specific name and color associated with it.
-
+<div align="center">
+  
 | Solved Problems     | Name                      | BG Color   | BG Color Preview                                        | Text Color | Text Color Preview
-| ------------------- | ------------------------- | ---------- | ------------------------------------------------------- |------------|-------------------|
+|:-------------------:|:-------------------------:|:----------:|:-------------------------------------------------------:|:-----------:|:-------------------:|
 | 0 - 4               | Syntax Novice             | #B0BEC5    | ![color](https://placehold.co/100x20/B0BEC5/B0BEC5.png) | #000000 | ![color](https://placehold.co/100x20/000000/000000.png)
 | 5 - 9               | Console Explorer          | #90A4AE    | ![color](https://placehold.co/100x20/90A4AE/90A4AE.png) | #000000 | ![color](https://placehold.co/100x20/000000/000000.png)
 | 10 - 19             | Variable Tamer            | #4DB6AC    | ![color](https://placehold.co/100x20/4DB6AC/4DB6AC.png) | #000000 | ![color](https://placehold.co/100x20/000000/000000.png)
@@ -52,6 +68,7 @@ Each rank has a specific name and color associated with it.
 | 2250 - 2499         | Grandmaster of Logic      | #FFD600    | ![color](https://placehold.co/100x20/FFD600/FFD600.png) | #000000 | ![color](https://placehold.co/100x20/000000/000000.png)
 | 2500+               | The Coding Myth           | #FF4081    | ![color](https://placehold.co/100x20/FF4081/FF4081.png) | #FFFFFF | ![color](https://placehold.co/100x20/FFFFFF/FFFFFF.png)
 
+</div>
 
 
 
