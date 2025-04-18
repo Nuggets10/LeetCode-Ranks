@@ -3,7 +3,9 @@
 </p>
 # 📦 | LeetCode Ranks
 LeetCode Ranks is a browser extension that adds a badge ranking system to LeetCode user profiles, based on the number of solved problems.
+
 ![Image](https://github.com/user-attachments/assets/583f4f59-b9f7-456e-8483-b42076a70902)
+
 # 🚀 | Installation
 You can find the extension on the Firefox Extension Store [here], or alternatively, you can download the files locally and upload them to your browser by following these steps:
 - Download the latest release
