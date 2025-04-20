@@ -13,9 +13,9 @@ You can check the extension availability on different stores in the following ta
 
 |   Browser   |   Automatic Installation   |     Link     |   Manual Installation   |
 |:-----------:|:--------------------------:|:------------:|:------------------------:|
-|   FireFox   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |  [soon]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+|   FireFox   | ![color](https://placehold.co/100x20/2196F3/2196F3.png) |  [testing]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
 |   Chrome    | ![color](https://placehold.co/100x20/ff0000/ff0000.png) |    X      | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
-|    Edge     | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |  [soon]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
+|    Edge     | ![color](https://placehold.co/100x20/2196F3/2196F3.png) |  [testing]   | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
 |   Others    | ![color](https://placehold.co/100x20/ff0000/ff0000.png) |    X      | ![color](https://placehold.co/100x20/00ff00/00ff00.png) |
 
 </div>
