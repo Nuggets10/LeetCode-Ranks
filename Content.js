@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 (async () => {
-    await sleep(1000);
+    await sleep(2000);
 
     function getElementTextByXPath(xpath) {
         const result = document.evaluate(
