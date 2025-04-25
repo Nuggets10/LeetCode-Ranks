@@ -28,11 +28,11 @@ Further testing is required to make sure the extension works properly on differe
 
 # 🔧 | Manual Installation
 - Download the latest release
-- Unzip the downloaded folder. The folder structure will look something like this: LeetCodeRanks_vx.x.x > LeetCode Ranks > Various Scripts 
+- Unzip the downloaded folder. The folder structure will look something like this: LeetCodeRanks_vx.x.x > Various scripts
 - Open your browser and navigate to the "Extensions" tab
 - Enable developer mode
 - Click the "Load unpacked" button that appears in the top part
-- Upload the LeetCode Ranks folder found inside the release you have unpacked
+- Upload the LeetCodeRanks_vx.x.x folder you have just unpacked
 
 # ❓ | Rankings
 Users receive ranks based on the number of problems they’ve solved.
